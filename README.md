@@ -10,3 +10,9 @@ The activations are summarized as a multivariate Gaussian by calculating the mea
 A lower FID indicates better-quality images; conversely, a higher score indicates a lower-quality image and the relationship may be linear.
 
 credit: https://machinelearningmastery.com/how-to-implement-the-frechet-inception-distance-fid-from-scratch/
+
+The FID between the distribution of
+real images r and generated images g is defined as
+FID = ||µr − µg||^2 + Tr(Σr + Σg − 2(ΣrΣg)^1/2)
+
+where Tr sums up all the diagonal elements
