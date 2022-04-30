@@ -13,6 +13,7 @@ credit: https://machinelearningmastery.com/how-to-implement-the-frechet-inceptio
 
 The FID between the distribution of
 real images r and generated images g is defined as
+
 FID = ||µr − µg||^2 + Tr(Σr + Σg − 2(ΣrΣg)^1/2)
 
 where Tr sums up all the diagonal elements
